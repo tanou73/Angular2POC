@@ -1,0 +1,37 @@
+body {
+	background-color: #2A4F6E;
+	color: #718DA5;
+	font-family: cursive;
+}
+ul { list-style: none; }
+li { font-size: 30px; }
+
+.todo-app { margin-top: 150px; }
+.todo-app form { margin-top: 50px; }
+
+.done {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.priority-normal {
+	color: green;
+}
+.priority-high {
+	color: blue;
+}
+.priority-omg {
+	color: red;
+}
+
+.list-item {
+	display: inline-block;
+}
+.list-item.content {
+	width: 350px;
+	width: 350px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: bottom;
+}

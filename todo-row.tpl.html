@@ -1,0 +1,13 @@
+<li>
+	<input type="checkbox" (click)="toggleChecked()" > 
+
+	<div class="list-item content" [class]="{ done: todo.checked }">
+		{{ todo.name }}
+	</div>
+
+	<span class="glyphicon glyphicon-alert" 
+		[class]="{ 'priority-omg': todo.priority == 2, 'priority-high': todo.priority == 1, 'priority-normal': todo.priority == 0 }">
+	</span>
+
+	<span class="glyphicon glyphicon-remove-sign" [class]="{}" (click)="remove()"></span>
+</li>
